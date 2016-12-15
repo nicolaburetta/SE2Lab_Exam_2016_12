@@ -78,3 +78,26 @@ describe("Test /searchStudent", function() {
 
 
 });
+
+//Test for /deleteStudent
+describe("Test /deleStudent", function(){
+    //set the data
+	var data = {ID: '1'};
+    
+    //legal request
+    it("return status code 200", function(done) {
+        client.post(base_url + "deleteStudent/", data, function(err, res, body) {
+            expect(body).toEqual(
+                {
+                    ID: "2",
+                    SSN: "A6T4",
+                    name: "Fabio",
+                    address: "via Sommarive",
+                    mark: "6"
+                }
+            );
+            
+            done();
+        });
+    });
+});

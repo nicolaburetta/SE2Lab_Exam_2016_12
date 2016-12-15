@@ -1,0 +1,24 @@
+{
+  "name": "se2labexam201612",
+  "version": "1.0.0",
+  "description": "Link to Heroku:",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolaburetta/SE2Lab_Exam_2016_12.git"
+  },
+  "author": "Nicola Schiavon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolaburetta/SE2Lab_Exam_2016_12/issues"
+  },
+  "homepage": "https://github.com/nicolaburetta/SE2Lab_Exam_2016_12#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0"
+  }
+}

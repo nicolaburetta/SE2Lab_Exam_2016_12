@@ -135,6 +135,34 @@ var insertStudent = function insertStudent(student)
 
 //AGGIUNGERE QUI SOTTO NUOVE FUNZIONI
 
+var getByMark = function (match) {
+    
+    var students = [];
+    var index = 0;
+    
+    if (match[0] == '>') {
+        for (var i = 0; i < studentList.length; i++) {
+            if (studentList[i].mark > match[1]) {
+                students[index] = studentList[i];
+                index++;
+            }
+        }
+    } else if (match[0] == '<') {
+        for (var i = 0; i < studentList.length; i++) {
+            if (studentList[i].mark < match[1]) {
+                students[index] = studentList[i];
+                index++;
+            }
+        }
+    } else {
+        students[index] = -1;
+        index++;
+    }
+    
+    return students;
+}
+
+exports.getByMark = getByMark;
 
 
 //export functions
